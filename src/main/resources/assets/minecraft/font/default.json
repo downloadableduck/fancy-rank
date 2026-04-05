@@ -1,0 +1,346 @@
+{
+  "providers": [
+    {
+      "type": "bitmap",
+      "file": "better-ranks:icons/mvpplus_black.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": ["\uE001"]
+    },
+    {
+      "type": "bitmap",
+      "file": "better-ranks:icons/mvpplus_blue.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": ["\uE002"]
+    },
+    {
+      "type": "bitmap",
+      "file": "better-ranks:icons/mvpplus_darkaqua.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": ["\uE003"]
+    },
+    {
+      "type": "bitmap",
+      "file": "better-ranks:icons/mvpplus_darkblue.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": ["\uE004"]
+    },
+    {
+      "type": "bitmap",
+      "file": "better-ranks:icons/mvpplus_darkgreen.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": ["\uE005"]
+    },
+    {
+      "type": "bitmap",
+      "file": "better-ranks:icons/mvpplus_darkpurple.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": ["\uE006"]
+    },
+    {
+      "type": "bitmap",
+      "file": "better-ranks:icons/mvpplus_darkred.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": ["\uE007"]
+    },
+    {
+      "type": "bitmap",
+      "file": "better-ranks:icons/mvpplus_gold.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": ["\uE008"]
+    },
+    {
+      "type": "bitmap",
+      "file": "better-ranks:icons/mvpplus_gray.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": ["\uE009"]
+    },
+    {
+      "type": "bitmap",
+      "file": "better-ranks:icons/vip.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": ["\uE010"]
+    },
+    {
+      "type": "bitmap",
+      "file": "better-ranks:icons/mvpplus_green.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": ["\uE011"]
+    },
+    {
+      "type": "bitmap",
+      "file": "better-ranks:icons/mvpplus_pink.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": ["\uE012"]
+    },
+    {
+      "type": "bitmap",
+      "file": "better-ranks:icons/mvpplus_red.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": ["\uE013"]
+    },
+    {
+      "type": "bitmap",
+      "file": "better-ranks:icons/mvpplus_white.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": ["\uE014"]
+    },
+    {
+      "type": "bitmap",
+      "file": "better-ranks:icons/mvpplus_yellow.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": ["\uE015"]
+    },
+    {
+      "type": "bitmap",
+      "file": "better-ranks:icons/amvpplusplus_black.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": ["\uE016"]
+    },
+    {
+      "type": "bitmap",
+      "file": "better-ranks:icons/amvpplusplus_blue.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": ["\uE017"]
+    },
+    {
+      "type": "bitmap",
+      "file": "better-ranks:icons/amvpplusplus_darkaqua.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": ["\uE018"]
+    },
+    {
+      "type": "bitmap",
+      "file": "better-ranks:icons/amvpplusplus_darkblue.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": ["\uE019"]
+    },
+    {
+      "type": "bitmap",
+      "file": "better-ranks:icons/amvpplusplus_darkgreen.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": ["\uE020"]
+    },
+    {
+      "type": "bitmap",
+      "file": "better-ranks:icons/amvpplusplus_darkpurple.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": ["\uE021"]
+    },
+    {
+      "type": "bitmap",
+      "file": "better-ranks:icons/amvpplusplus_darkred.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": ["\uE022"]
+    },
+    {
+      "type": "bitmap",
+      "file": "better-ranks:icons/amvpplusplus_gold.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": ["\uE023"]
+    },
+    {
+      "type": "bitmap",
+      "file": "better-ranks:icons/amvpplusplus_gray.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": ["\uE024"]
+    },
+    {
+      "type": "bitmap",
+      "file": "better-ranks:icons/amvpplusplus_green.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": ["\uE025"]
+    },
+    {
+      "type": "bitmap",
+      "file": "better-ranks:icons/amvpplusplus_pink.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": ["\uE026"]
+    },
+    {
+      "type": "bitmap",
+      "file": "better-ranks:icons/amvpplusplus_red.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": ["\uE027"]
+    },
+    {
+      "type": "bitmap",
+      "file": "better-ranks:icons/amvpplusplus_white.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": ["\uE028"]
+    },
+    {
+      "type": "bitmap",
+      "file": "better-ranks:icons/amvpplusplus_yellow.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": ["\uE029"]
+    },
+    {
+      "type": "bitmap",
+      "file": "better-ranks:icons/mvpplusplus_black.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": ["\uE030"]
+    },
+    {
+      "type": "bitmap",
+      "file": "better-ranks:icons/mvpplusplus_blue.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": ["\uE031"]
+    },{
+      "type": "bitmap",
+      "file": "better-ranks:icons/mvpplusplus_darkaqua.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": ["\uE032"]
+    },
+    {
+      "type": "bitmap",
+      "file": "better-ranks:icons/mvpplusplus_darkblue.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": ["\uE033"]
+    },
+    {
+      "type": "bitmap",
+      "file": "better-ranks:icons/mvpplusplus_darkgreen.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": ["\uE034"]
+    },
+    {
+      "type": "bitmap",
+      "file": "better-ranks:icons/mvpplusplus_darkpurple.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": ["\uE035"]
+    },
+    {
+      "type": "bitmap",
+      "file": "better-ranks:icons/mvpplusplus_darkred.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": ["\uE036"]
+    },
+    {
+      "type": "bitmap",
+      "file": "better-ranks:icons/mvpplusplus_gold.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": ["\uE037"]
+    },
+    {
+      "type": "bitmap",
+      "file": "better-ranks:icons/mvpplusplus_gray.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": ["\uE038"]
+    },
+    {
+      "type": "bitmap",
+      "file": "better-ranks:icons/mvpplusplus_green.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": ["\uE039"]
+    },
+    {
+      "type": "bitmap",
+      "file": "better-ranks:icons/mvpplusplus_pink.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": ["\uE040"]
+    },
+    {
+      "type": "bitmap",
+      "file": "better-ranks:icons/mvpplusplus_purple.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": ["\uE041"]
+    },
+    {
+      "type": "bitmap",
+      "file": "better-ranks:icons/mvpplusplus_red.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": ["\uE042"]
+    },
+    {
+      "type": "bitmap",
+      "file": "better-ranks:icons/mvpplusplus_white.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": ["\uE043"]
+    },
+    {
+      "type": "bitmap",
+      "file": "better-ranks:icons/mvpplusplus_yellow.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": ["\uE044"]
+    },
+    {
+      "type": "bitmap",
+      "file": "better-ranks:icons/mvp.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": ["\uE045"]
+    },
+    {
+      "type": "bitmap",
+      "file": "better-ranks:icons/vipplus.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": ["\uE046"]
+    },
+    {
+      "type": "bitmap",
+      "file": "better-ranks:icons/youtube.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": ["\uE047"]
+    },
+    {
+      "type": "bitmap",
+      "file": "better-ranks:icons/default.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": ["\uE048"]
+    },
+    {
+      "type": "bitmap",
+      "file": "better-ranks:icons/npc.png",
+      "ascent": 8,
+      "height": 9,
+      "chars": ["\uE049"]
+    }
+  ]
+}

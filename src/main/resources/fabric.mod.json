@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "better-ranks",
+	"version": "${version}",
+	"name": "Hypixel FancyRank",
+	"description": "Makes Hypixel's ranks look better.",
+	"authors": [
+		"downloadableduck"
+	],
+  "accessWidener": "better-ranks.accesswidener",
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/better-ranks/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.jeff.betterranks.BetterRanks"
+		],
+		"client": [
+			"com.jeff.betterranks.BetterRanksClient"
+		]
+	},
+	"mixins": [
+		"better-ranks.mixins.json",
+		{
+			"config": "better-ranks.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.18.6",
+		"minecraft": "~26.1.1",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
