@@ -10,6 +10,10 @@ import net.minecraft.network.chat.ClickEvent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.resources.Identifier;
+import net.minecraft.util.StringUtil;
+import net.minecraft.world.scores.DisplaySlot;
+import net.minecraft.world.scores.Objective;
+import net.minecraft.world.scores.Scoreboard;
 import org.lwjgl.system.ffm.mapping.Mapping;
 
 import java.util.List;
@@ -230,7 +234,7 @@ public class BetterRanksClient implements ClientModInitializer {
 
     public void updateRankTag(String formattedRank, String imageCode, String usernameColor) {
         ClientReceiveMessageEvents.ALLOW_CHAT.register((component, message, gameProfile, bound, instant) -> {
-            if (message.decoratedContent().getString().contains("test")) {
+            if (message.decoratedContent() != null && message.decoratedContent().getString().contains("test")) {
                 String username = gameProfile.name();
                 String replacedMessage = message.decoratedContent().getString().replace("test", "\uE001");
                 Minecraft.getInstance().execute(() -> {
@@ -267,7 +271,7 @@ public class BetterRanksClient implements ClientModInitializer {
             return true;
         });
         ClientTickEvents.END_CLIENT_TICK.register((client) -> {
-        if (client.getCurrentServer() != null && client.player != null && client.getConnection().getListedOnlinePlayers().size() > 0 && client.getConnection() != null) {
+        if (client.getCurrentServer() != null && client.player != null && !client.getConnection().getListedOnlinePlayers().isEmpty() && client.getConnection() != null) {
             int color;
 
             for (PlayerInfo entry : client.getConnection().getListedOnlinePlayers()) {
@@ -285,7 +289,11 @@ public class BetterRanksClient implements ClientModInitializer {
                             .contains(YOUTUBE_CODE)) {
                         color = Integer.parseInt(YOUTUBE_COLOR, 16);
                     } else {
-                        color = Integer.parseInt(entry.getTeam().getColor().getColor().toString());
+                        if (entry.getTeam().getColor().getColor() != null) {
+                            color = Integer.parseInt(entry.getTeam().getColor().getColor().toString());
+                        } else {
+                            color = Integer.parseInt("7d838e", 16);
+                        }
                     }
                 } else {
                     color = Integer.parseInt("7d838e", 16);
@@ -300,8 +308,10 @@ public class BetterRanksClient implements ClientModInitializer {
                         .getPlayerPrefix().getString().replace(formattedRank, imageCode): "");
                 String tag = entry.getTeam() != null ? entry.getTeam()
                                 .getPlayerSuffix().getString() : "";
+                if (!isInSkyblock()) {
                     entry.setTabListDisplayName(
                             rank.append(displayName).append(tag));
+                }
             }
             }
         });
@@ -353,5 +363,17 @@ public class BetterRanksClient implements ClientModInitializer {
                 || string.contains(MVP_PLUS_PLUS_WHITE_CODE)
                 || string.contains(MVP_PLUS_PLUS_YELLOW_CODE);
 
+    }
+    boolean isInSkyblock() {
+        Scoreboard scoreboard = Minecraft.getInstance().level.getScoreboard();
+
+        if (scoreboard != null) {
+            Objective objective = scoreboard.getDisplayObjective(DisplaySlot.SIDEBAR);
+            if (objective != null) {
+                String name = StringUtil.stripColor(objective.getName());
+                return name.contains("SBScoreboard");
+            }
+        }
+        return false;
     }
 }
