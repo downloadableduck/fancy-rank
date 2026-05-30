@@ -3,21 +3,16 @@ package com.jeff.betterranks;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.message.v1.ClientReceiveMessageEvents;
-import net.fabricmc.fabric.api.client.message.v1.ClientSendMessageEvents;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.PlayerInfo;
-import net.minecraft.network.chat.ClickEvent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
-import net.minecraft.resources.Identifier;
 import net.minecraft.util.StringUtil;
 import net.minecraft.world.scores.DisplaySlot;
 import net.minecraft.world.scores.Objective;
 import net.minecraft.world.scores.Scoreboard;
-import org.lwjgl.system.ffm.mapping.Mapping;
 
 import java.util.List;
-import java.util.Objects;
 import java.util.regex.Pattern;
 
 public class BetterRanksClient implements ClientModInitializer {
@@ -238,7 +233,7 @@ public class BetterRanksClient implements ClientModInitializer {
                 String username = gameProfile.name();
                 String replacedMessage = message.decoratedContent().getString().replace("test", "\uE001");
                 Minecraft.getInstance().execute(() -> {
-                    Minecraft.getInstance().gui.getChat().addPlayerMessage(Component.literal(username
+                    Minecraft.getInstance().gui.getChat().addMessage(Component.literal(username
                             +": " + Component.literal(replacedMessage)
                             .withColor(Integer.parseInt("0ea4e5", 16))
                     ), message.signature(), null);
@@ -248,7 +243,7 @@ public class BetterRanksClient implements ClientModInitializer {
             }
             return true;
         });
-        ClientReceiveMessageEvents.ALLOW_GAME.register((component, _) -> {
+        ClientReceiveMessageEvents.ALLOW_GAME.register((component, b) -> {
             /*This if statement seems to be the issue, it does not seem to be firing
             when in a game.
             Scratch that, it is only not firing when it is the user who sends it.
@@ -262,7 +257,7 @@ public class BetterRanksClient implements ClientModInitializer {
                                 .replace(formattedRank, ""))
                         .withColor(Integer.parseInt(usernameColor, 16));
                 Minecraft.getInstance().execute(() -> {
-                    Minecraft.getInstance().gui.getChat().addServerSystemMessage(componentBeforeRank
+                    Minecraft.getInstance().gui.getChat().addMessage(componentBeforeRank
                             .append((rankIcon.append(replacedMessage
                                     .append((Component.literal("§b")))))));
                 });
